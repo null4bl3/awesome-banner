@@ -1,6 +1,6 @@
 {
   "name": "awesome-banner",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Isometric ASCII banner for your application with a minimal set of dependencies.",
   "main": "index.js",
   "scripts": {
