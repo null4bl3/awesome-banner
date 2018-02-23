@@ -209,14 +209,13 @@ exports.banner = (_app, _font) => {
   process.stdout.write(chalk.blue(" » ") + timer() + chalk.blue(" « "));
   console.log();
   console.log();
-  let file_run = "RUNNING FILE: ";
+  let file_run = "RUNNING FILE: " + process.argv[1];
   let path_length = file_run + process.argv[1];
 
   for (let i = 0; i < (process.stdout.columns / 2 - path_length.length / 2); i++) {
    process.stdout.write(" ");
   }
-  console.log(file_run);
-  console.log(chalk.yellow(process.argv[1]));
+  console.log(file_run + chalk.yellow(process.argv[1]));
   console.log();
   for (let i = 0; i < process.stdout.columns; i++) {
    if (i % 2) {
