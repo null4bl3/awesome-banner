@@ -176,8 +176,12 @@ let timer = function() {
 exports.banner = (_app, _font) => {
  if (!_app) {
   _app = "THE GREAT NULL";
- } if (!_font || !font_list.includes(_font)) {
+ } 
+ if (!_font || !font_list.includes(_font)) {
   _font = "isometric1'";
+ } 
+ if (_font == "random") {
+  _font = font_list[Math.floor((Math.random() * font_list.length - 1))];
  }
  for (let i = 0; i < process.stdout.columns; i++) {
   if (i % 2) {
@@ -224,6 +228,6 @@ exports.banner = (_app, _font) => {
     process.stdout.write(chalk.blue("="));
    }
   }
+  console.log();
  });
- console.log();
 };
