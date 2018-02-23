@@ -24,9 +24,11 @@ let timer = function() {
  return "Time Updated: " + curr_hour + ":" + curr_min + ":" + curr_sec;
 };
 
-exports.banner = (_app) => {
+exports.banner = (_app, _font) => {
  if (!_app) {
   _app = "THE GREAT NULL";
+ } if (!_font) {
+  _font = "isometric1'";
  }
  for (let i = 0; i < process.stdout.columns; i++) {
   if (i % 2) {
@@ -36,7 +38,7 @@ exports.banner = (_app) => {
   }
  }
  asciify(_app, {
-  font: 'isometric1'
+  font: _font
  }, (err, res) => {
   let string_list = res.split(/\r?\n/);
   for (let k = 0; k < string_list.length; k++) {
