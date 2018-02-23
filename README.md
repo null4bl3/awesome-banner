@@ -6,6 +6,9 @@ ASCII banner for your application with a minimal set of dependencies.
 ![scrot](https://raw.githubusercontent.com/null4bl3/awesome-banner/master/the_scrot.png)
 
 
+![second scrot](https://raw.githubusercontent.com/null4bl3/awesome-banner/master/second_scrot.png)
+
+
 Usage:
 
 ```javascript
