@@ -1,4 +1,5 @@
-module.exports = ["3-d",
+module.exports = [
+ "3-d",
  "3x5",
  "5lineoblique",
  "acrobatic",
@@ -107,7 +108,7 @@ module.exports = ["3-d",
  "rozzo",
  "runic",
  "runyc",
- "sblood",;
+ "sblood",
  "script",
  "serifcap",
  "shadow",
@@ -145,4 +146,4 @@ module.exports = ["3-d",
  "univers",
  "usaflag",
  "wavy",
- "weird"]
+ "weird"];

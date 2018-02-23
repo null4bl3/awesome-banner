@@ -2,8 +2,7 @@ let ascii = require('ascii-art');
 let color = require('colors');
 let chalk = require('chalk');
 let asciify = require('asciify');
-let font_list = require('font_list');
-
+let font_list = require('./font_list');
 
 let center = function(_string) {
  return process.stdout.columns / 2 - _string.length / 2;
@@ -60,6 +59,12 @@ exports.banner = (_app, _font) => {
    process.stdout.write(" ");
   }
   process.stdout.write(chalk.blue(" » ") + timer() + chalk.blue(" « "));
+  console.log();
+  let file_run = process.argv[1];
+  for (let i = 0; i < (process.stdout.columns / 2 - file_run.length / 2); i++) {
+   process.stdout.write(" ");
+  }
+  console.log(file_run);
   console.log();
   for (let i = 0; i < process.stdout.columns; i++) {
    if (i % 2) {
