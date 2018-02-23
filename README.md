@@ -19,7 +19,7 @@ For visual examples please see: http://www.figlet.org/examples.html
 
 Other fonts that can be used:
 
-3-d
+3-d \n
 3x5
 5lineoblique
 acrobatic
