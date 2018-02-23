@@ -2,7 +2,7 @@ let ascii = require('ascii-art');
 let color = require('colors');
 let chalk = require('chalk');
 let asciify = require('asciify');
-let font_list = require('./font_list');
+let font_list = require('font_list');
 
 let center = function(_string) {
  return process.stdout.columns / 2 - _string.length / 2;
