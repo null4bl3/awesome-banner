@@ -2,6 +2,8 @@ let ascii = require('ascii-art');
 let color = require('colors');
 let chalk = require('chalk');
 let asciify = require('asciify');
+let font_list = require('font_list');
+
 
 let center = function(_string) {
  return process.stdout.columns / 2 - _string.length / 2;
@@ -27,7 +29,7 @@ let timer = function() {
 exports.banner = (_app, _font) => {
  if (!_app) {
   _app = "THE GREAT NULL";
- } if (!_font) {
+ } if (!_font || !font_list.includes(_font)) {
   _font = "isometric1'";
  }
  for (let i = 0; i < process.stdout.columns; i++) {
