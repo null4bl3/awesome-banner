@@ -208,7 +208,8 @@ exports.banner = (_app, _font) => {
   }
   process.stdout.write(chalk.blue(" » ") + timer() + chalk.blue(" « "));
   console.log();
-  let file_run = "RUNNING FILE: " + process.argv[1];
+  console.log();
+  let file_run = "RUNNING FILE: ", chalk.yellow(process.argv[1]);
   for (let i = 0; i < (process.stdout.columns / 2 - file_run.length / 2); i++) {
    process.stdout.write(" ");
   }
