@@ -65,4 +65,5 @@ exports.banner = (_app) => {
    }
   }
  });
+ console.log();
 };
