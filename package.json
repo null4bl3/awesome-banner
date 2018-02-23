@@ -1,15 +1,15 @@
 {
   "name": "awesome-banner",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Isometric ASCII banner for your application with a minimal set of dependencies.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": { 
-     "type": "git",
-     "url": "https://github.com/null4bl3/awesome-banner"
-   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/null4bl3/awesome-banner"
+  },
   "author": "null4bl3",
   "license": "ISC",
   "dependencies": {
