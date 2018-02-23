@@ -18,9 +18,7 @@ awesome.banner('Your App Name Here', 'font');
 * Please note that not all figlet fonts will display correctly, depending on terminal with etc.
 * The module takes a font option of 'random', to use a random figlet font on each reload. 
 
-![scrot](https://raw.githubusercontent.com/null4bl3/awesome-banner/master/font_giflet.gif)
-
-For more visual figlet font examples please see: 
+For visual figlet font examples please see: 
 
 http://www.figlet.org/examples.html
 
