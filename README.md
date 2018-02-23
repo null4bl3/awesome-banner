@@ -12,10 +12,17 @@ Usage:
 let awesome = require('awesome-banner');
 awesome.banner('Your App Name Here', 'font');
 ```
+***
 
-*font is optional and will default to the isometric1 font.
+* Font is optional and will default to the 'banner3' figlet font.
+* Please note that not all figlet fonts will display correctly, depending on terminal with etc.
+* The module takes a font option of 'random', to use a random figlet font on each reload. 
 
-For visual examples please see: http://www.figlet.org/examples.html
+![scrot](https://raw.githubusercontent.com/null4bl3/awesome-banner/master/font_giflet.gif)
+
+For more visual figlet font examples please see: 
+
+http://www.figlet.org/examples.html
 
 ---
 

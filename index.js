@@ -177,12 +177,13 @@ exports.banner = (_app, _font) => {
  if (!_app) {
   _app = "THE GREAT NULL";
  } 
- if (!_font || !font_list.includes(_font)) {
-  _font = "isometric1'";
- } 
  if (_font == "random") {
   _font = font_list[Math.floor((Math.random() * font_list.length - 1))];
  }
+ if (!_font || !font_list.includes(_font)) {
+  _font = "banner3";
+ }  
+ console.log("USING FONT: ", _font);
  for (let i = 0; i < process.stdout.columns; i++) {
   if (i % 2) {
    process.stdout.write(chalk.green("="));
