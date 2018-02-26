@@ -19,7 +19,9 @@ awesome.banner('Your App Name Here', 'font');
 
 * Font is optional and will default to the 'banner3' figlet font.
 * Please note that not all figlet fonts will display correctly, depending on terminal with etc.
+* The module calculates terminal width, so it will only work on tty terminals. To fix on Windows, just switch to Linux
 * The module takes a font option of 'random', to use a random figlet font on each reload. 
+
 
 For visual figlet font examples please see: 
 
